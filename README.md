@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Declara o documento como sendo do tipo HTML5 -->
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8, permitindo o uso de acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para garantir que a página seja responsiva em diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página exibido na aba do navegador -->
+    <title>Document</title>
+    <!-- Importa o arquivo de folha de estilos (CSS) externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tag semântica que define o cabeçalho principal da página -->
+    <header>
+        <!-- Demonstração da hierarquia de títulos, do H1 (principal) ao H6 (menor nível de importância). 
+             Nota: O uso do atributo 'align' é obsoleto no padrão HTML5, sendo mantido neste exemplo apenas para fins didáticos (recomenda-se a formatação via CSS). -->
+        <h1 align="center">Título principal (H1) - centralizado</h1>
+        <h2 align="left">Subtítulo (H2) - alinhado à esquerda</h2>
+        <h3 align="right">Seção (H3) - alinhado à direita</h3>
+        <h4>Subseção (H4)</h4>
+        <h5>Detalhe (H5)</h5>
+        <h6>Nota (H6)</h6>
+    </header>
+
+    <!-- Tag semântica utilizada para agrupar os links de navegação do documento -->
+    <nav>
+        <p>
+            <!-- Links âncora que direcionam o usuário para seções específicas da mesma página, utilizando o atributo 'id' como destino -->
+            <a href="#posts">Posts</a> | 
+            <a href="#lateral">Lateral</a> | 
+            <a href="#rodape">Rodapé</a>
+        </p>
+    </nav>
+
+    <!-- Tag semântica que delimita uma seção genérica da página. O atributo id="posts" serve como destino para o link âncora de navegação -->
+    <section id="posts">
+        <!-- Tag semântica que engloba um conteúdo independente e autônomo, como um artigo ou postagem -->
+        <article class="post">
+            <header>
+                <h2>Meu Blog – Primeiro Post</h2>
+            </header>
+            
+            <p>
+                <!-- Demonstração de tags para formatação de texto em nível de linha (inline): -->
+                Este é um <strong>texto em negrito</strong>, <!-- <strong> atribui forte importância e peso visual -->
+                aqui temos um <em>texto em itálico</em>, <!-- <em> atribui ênfase semântica e visual -->
+                <span class="underline">um texto sublinhado</span>, <!-- <span> atua como um contêiner genérico para aplicação da classe CSS correspondente -->
+                <span class="strikethrough">um texto riscado</span>, <!-- Contêiner genérico para aplicação do estilo tachado -->
+                além de exemplos com <sub>subscrito</sub> <!-- <sub> exibe o texto ligeiramente abaixo da linha normal -->
+                e <sup>sobrescrito</sup>. <!-- <sup> exibe o texto ligeiramente acima da linha normal -->
+            </p>
+            
+            <!-- Aplicação de estilo CSS em linha (inline) para alterar a cor e o tamanho da fonte diretamente no elemento -->
+            <p style="color: blue; font-size: 20px;">
+                Este é um texto estilizado em azul e com fonte maior.
+            </p>
+            
+            <!-- Aplicação de estilo CSS em linha para justificar o alinhamento do texto -->
+            <p style="text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> <!-- A tag <br> insere uma quebra de linha manual dentro do bloco de texto -->
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </article>
+    </section>
+
+    <!-- Elemento de bloco genérico utilizado para formatação. A classe 'center' aplica o alinhamento centralizado definido no CSS -->
+    <div class="center">
+        Este texto está centralizado
+    </div>
+
+    <!-- Tag semântica que representa conteúdo secundário ou tangencial ao conteúdo principal, comumente utilizada para barras laterais -->
+    <aside id="lateral">
+        <h3>Conteúdo Relacionado</h3>
+        <p>
+            Aqui você encontra informações adicionais, links úteis e conteúdos que complementam o tema principal do post.
+            Essa área pode ser usada para destacar artigos relacionados, sugestões de leitura ou notas importantes.
+        </p>
+    </aside>
+
+    <!-- Tag semântica que define o rodapé da página, geralmente contendo informações de direitos autorais ou créditos do projeto -->
+    <footer id="rodape">
+        <p>© 2025 – Exemplo didático de HTML da Aula</p>
+    </footer>
+</body>
+</html>
+
+
+
+/* Classe utilitária utilizada para aplicar um traço sublinhado ao texto */
+.underline {
+    text-decoration: underline;
+}
+
+/* Classe utilitária utilizada para aplicar um traço sobre o texto (efeito tachado ou riscado) */
+.strikethrough {
+    text-decoration: line-through;
+}
+
+/* Classe utilitária utilizada para centralizar o alinhamento do texto horizontalmente */
+.center {
+    text-align: center;
+}
