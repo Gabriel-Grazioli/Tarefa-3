@@ -1,10 +1,14 @@
+/* Classe utilitária utilizada para aplicar um traço sublinhado ao texto */
 .underline {
     text-decoration: underline;
 }
 
+/* Classe utilitária utilizada para aplicar um traço sobre o texto (efeito tachado ou riscado) */
 .strikethrough {
     text-decoration: line-through;
 }
+
+/* Classe utilitária utilizada para centralizar o alinhamento do texto horizontalmente */
 .center {
     text-align: center;
 }
